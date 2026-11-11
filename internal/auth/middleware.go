@@ -11,7 +11,7 @@ import (
 //middleware requires a valid "Authorization: Bearer <token>"header
 //and stores the user id in the request context for handlers to read
 
-func middleware() gin.HandlerFunc {
+func Middleware() gin.HandlerFunc {
 	return func(c *gin.Context) {
 		header := c.GetHeader("Authorization")
 		if !strings.HasPrefix(header, "Bearer ") {

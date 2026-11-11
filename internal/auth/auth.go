@@ -16,6 +16,9 @@ func randomHex(n int) (string, error) {
 	return hex.EncodeToString(b), nil
 }
 
+
+
+
 // GenerateStreamKey creates the SECRET key a broadcaster puts in OBS.
 // Anyone who has it can stream as that user, so it is never shown publicly.
 func GenerateStreamKey() (string, error) {

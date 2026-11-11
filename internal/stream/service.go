@@ -55,6 +55,6 @@ func (s *Service) MarkOffLine(ctx context.Context, id int) error {
 
 }
 
-func (s *Service) ListLive(ctx context.Context, id int) ([]*Stream, error) {
+func (s *Service) ListLive(ctx context.Context) ([]*Stream, error) {
 	return s.repo.ListLive(ctx)
 }
